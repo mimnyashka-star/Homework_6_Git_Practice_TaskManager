@@ -91,11 +91,6 @@ namespace TaskTracker.Services
             return $"Всего: {total} | Новых: {newCount} | В работе: {inProgressCount} | Завершено: {doneCount} | Отменено: {cancelledCount}";
         }
 
-        public string GetBasicStats()
-        {
-            int total = tasks.Count;
-            int doneCount = GetTasksByStatus(TaskStatus.Done).Count;
-            return $"Всего задач: {total}, Завершено: {doneCount}";
-        }
+        
     }
 }
