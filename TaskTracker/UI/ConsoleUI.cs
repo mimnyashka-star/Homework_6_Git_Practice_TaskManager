@@ -16,21 +16,19 @@ namespace TaskTracker.UI
             this.taskService = taskService;
             this.storage = storage;
             this.useArrowMenu = useArrowMenu;
-
-
-            private void ShowStatistics()
-            {
-                Console.WriteLine();
-                Console.WriteLine("--- Статистика ---");
-                Console.WriteLine(taskService.GetStatistics());
-
-                if (useArrowMenu)
-                {
-                    Console.WriteLine("\nНажмите любую клавишу для продолжения...");
-                    Console.ReadKey();
-                }
-            }
         
+        }
+        private void ShowStatistics()
+        {
+            Console.WriteLine();
+            Console.WriteLine("--- Статистика ---");
+            Console.WriteLine(taskService.GetStatistics());
+
+            if (useArrowMenu)
+            {
+                Console.WriteLine("\nНажмите любую клавишу для продолжения...");
+                Console.ReadKey();
+            }
         }
 
         public void Run()
