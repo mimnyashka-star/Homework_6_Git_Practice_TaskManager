@@ -18,6 +18,7 @@ namespace TaskTracker.UI
             this.useArrowMenu = useArrowMenu;
         
         }
+
         private void ShowStatistics()
         {
             Console.WriteLine();
